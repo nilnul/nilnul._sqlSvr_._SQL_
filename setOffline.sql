@@ -1,0 +1,5 @@
+﻿ALTER DATABASE nilnul3
+ SET OFFLINE
+ go
+--with no_wait
+--WITH ROLLBACK IMMEDIATE

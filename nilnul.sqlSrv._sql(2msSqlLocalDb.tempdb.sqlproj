@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>nilnul.sqlSrv._sql(2msSqlLocalDb.tempdb</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{a5b2c642-546e-4299-a7fe-e941c261491a}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>_sql</RootNamespace>
+    <AssemblyName>_sql</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <TargetDatabase />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Default to the v10.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dac" />
+    <Folder Include="openTran" />
+    <Folder Include="lang" />
+    <Folder Include="table" />
+    <Folder Include="_srvS" />
+    <Folder Include="%40srv" />
+    <Folder Include="%40srv\collate" />
+    <Folder Include="%40db" />
+    <Folder Include="snippets" />
+    <Folder Include="_user_" />
+    <Folder Include="%40srv\sys" />
+    <Folder Include="%40db\eg" />
+    <Folder Include="%40db\eg\master" />
+    <Folder Include="func" />
+    <Folder Include="func\partS" />
+    <Folder Include="func\partS\index" />
+    <Folder Include="func\partS\file" />
+    <Folder Include="func\partS\obj" />
+    <Folder Include="%40db\func" />
+    <Folder Include="%40srv\prop" />
+    <Folder Include="val.typ" />
+    <Folder Include="table\col" />
+    <Folder Include="objc" />
+    <Folder Include="%40db\statistics" />
+    <Folder Include="vw" />
+    <Folder Include="cmd" />
+    <Folder Include="exe" />
+    <Folder Include="xact" />
+    <Folder Include="%40val" />
+    <Folder Include="%40val\eq" />
+    <Folder Include="cfg" />
+    <Folder Include="tables" />
+    <Folder Include="tables\cols" />
+    <Folder Include="%40srv\notify" />
+    <Folder Include="%40db\svcBroker" />
+    <Folder Include="——temp" />
+    <Folder Include="%40srv\db" />
+    <Folder Include="%40db\file" />
+    <Folder Include="%40db\tran" />
+    <Folder Include="tran" />
+    <Folder Include="percentQuote" />
+    <Folder Include="cfg\option" />
+    <Folder Include="cfg\option\ansi_warning" />
+    <Folder Include="sel" />
+    <Folder Include="sel\_exceptUnion" />
+    <Folder Include="proc" />
+    <Folder Include="dbs" />
+    <Folder Include="db" />
+    <Folder Include="db\table" />
+    <Folder Include="db\table\indexes" />
+    <Folder Include="db\modules" />
+    <Folder Include="batch" />
+    <Folder Include="db\options" />
+    <Folder Include="db\options\implicit_tran" />
+    <Folder Include="db\table\constraints" />
+    <Folder Include="db\table\constraints\remove" />
+    <Folder Include="db\table\col_" />
+    <Folder Include="db\table\col_\ident" />
+    <Folder Include="db\login" />
+    <Folder Include="val" />
+    <Folder Include="val\dataLength" />
+    <Folder Include="vow" />
+    <Folder Include="col" />
+    <Folder Include="view" />
+    <Folder Include="svr" />
+    <Folder Include="svr\master" />
+    <Folder Include="svr\master\sptValues" />
+    <Folder Include="_tsql_" />
+    <Folder Include="_tsql_\values_" />
+    <Folder Include="index" />
+    <Folder Include="table\rows" />
+    <Folder Include="table\rows\col" />
+    <Folder Include="table\rows\col\concat_" />
+    <Folder Include="sheet" />
+    <Folder Include="sheet\col" />
+    <Folder Include="sheet\unpivot" />
+    <Folder Include="db\type_" />
+    <Folder Include="conn" />
+    <Folder Include="conn\session" />
+    <Folder Include="conn\session\batch" />
+    <Folder Include="conn\session\_batch" />
+    <Folder Include="conn\session\_batch\cursor" />
+    <Folder Include="conn\session\_batch\sentence" />
+    <Folder Include="conn\session\_batch\_sentence_" />
+    <Folder Include="conn\session\_batch\_sentence_\pivot" />
+    <Folder Include="svrs" />
+    <Folder Include="svr\xaction" />
+    <Folder Include="db\schema" />
+    <Folder Include="db\obj_" />
+    <Folder Include="conn\session\_batch\_sentence_\query" />
+    <Folder Include="db\tables" />
+    <Folder Include="db\_schema" />
+    <Folder Include="db\trig" />
+    <Folder Include="db\table\cols" />
+    <Folder Include="conn\session\_batch\_sentence_\func_" />
+    <Folder Include="conn\session\_batch\_sentence_\func_\time_" />
+    <Folder Include="conn\session\_batch\_sentence_\_query_" />
+    <Folder Include="conn\session\_batch\_sentence_\_query_\clause_" />
+    <Folder Include="conn\session\_batch\_sentence_\_query_\clause_\_sel_" />
+    <Folder Include="conn\session\_batch\_sentence_\_query_\clause_\_sel_\window_" />
+    <Folder Include="conn\session\_batch\_sentence_\_query_\clause_\_sel_\rank" />
+    <Folder Include="conn\session\_batch\_sentence_\_query_\clause_\_sel_\window_\offset" />
+    <Folder Include="conn\session\_batch\_sentence_\query_" />
+    <Folder Include="conn\session\_batch\_sentence_\query_\unpivot" />
+    <Folder Include="conn\session\_batch\_sentence_\_query_\grpBy_" />
+    <Folder Include="conn\session\_batch\_sentence_\_query_\grpBy_\cols_" />
+    <Folder Include="conn\session\_batch\_sentence_\_query_\grpBy_\cols_\rollup" />
+    <Folder Include="conn\session\_batch\_sentence_\query_\_grp_" />
+    <Folder Include="conn\session\_batch\_sentence_\query_\sideEffect_" />
+    <Folder Include="db\seq" />
+    <Folder Include="conn\session\_batch\_sentence_\query_\cte" />
+    <Folder Include="conn\session\_batch\_sentence_\scalar" />
+    <Folder Include="conn\session\_batch\_sentence_\var" />
+    <Folder Include="conn\session\_batch\sentence_" />
+    <Folder Include="conn\session\_batch\sentence_\dynaSql_" />
+    <Folder Include="db\isRecurTrig" />
+    <Folder Include="table\acc" />
+    <Folder Include="db\updatable" />
+    <Folder Include="acc" />
+    <Folder Include="acc\tables" />
+    <Folder Include="dynamic" />
+    <Folder Include="index_" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="publish.sql" />
+    <None Include="multipleResultSetReturned in Xml.sql" />
+    <None Include="shutdown.sql" />
+    <None Include="Script1.sql" />
+    <None Include="cteInterval.sql" />
+    <None Include="select random.sql" />
+    <None Include="@@options.sql" />
+    <None Include="detach.sql" />
+    <None Include="attach.nilnul3.sql" />
+    <None Include="attach.sql" />
+    <None Include="attach1.sql" />
+    <Build Include="spaces.sql" />
+    <None Include="setOffline.sql" />
+    <None Include="detach.wyt.sql" />
+    <None Include="attach.wyt.sql" />
+    <None Include="sp_helpdb.sql" />
+    <None Include="fn_.sql" />
+    <None Include="dbcc inputbuffer.sql" />
+    <None Include="databases.sql" />
+    <None Include="dac\instances.sql" />
+    <None Include="dac\internal.sql" />
+    <None Include="dac\history.sql" />
+    <None Include="openTran\%40%40connections.sql" />
+    <None Include="openTran\dbcc opentran.sql" />
+    <None Include="openTran\dbcc.sql" />
+    <None Include="openTran\sys.dm_tran_active_transactions .sql" />
+    <None Include="openTran\sys.sysprocesses .sql" />
+    <None Include="openTran\sp_who.sql" />
+    <None Include="openTran\sp_lock.sql" />
+    <None Include="openTran\open tran.sql" />
+    <None Include="openTran\sel trancount.sql" />
+    <None Include="openTran\commit.sql" />
+    <None Include="openTran\@@SPID.sql" />
+    <None Include="openTran\sys.dm_tran_locks.sql" />
+    <None Include="openTran\kill.sql" />
+    <None Include="openTran\sessionId status.sql" />
+    <None Include="xml.sql" />
+    <None Include="lang\sys.sysLanguages.sql" />
+    <None Include="table\attach.sql" />
+    <None Include="_srvS\list.sql" />
+    <None Include="%40srv\collate\collate.sql" />
+    <Build Include="%40srv\collate.sql" />
+    <None Include="%40db\%40%40options.sql" />
+    <None Include="@srv\sys.databases.sql" />
+    <None Include="@srv\serverPropeties.sql" />
+    <None Include="@srv\openTran.sql" />
+    <None Include="@srv\dm_exec_sessions.sql" />
+    <None Include="@srv\dm_exec_connections.sql" />
+    <None Include="snippets\getLatestExecuted.sql" />
+    <None Include="@db\schema.sql" />
+    <None Include="@db\fk_reference.sql" />
+    <None Include="@db\objects.sql" />
+    <None Include="@db\sys_columns.sql" />
+    <None Include="@db\seq.sql" />
+    <None Include="@db\rowCountEstimate.sql" />
+    <None Include="@db\eg\master\is snapshot.sql" />
+    <None Include="func\hash.sql" />
+    <None Include="func\schema_id.sql" />
+    <None Include="func\type_id.sql" />
+    <None Include="func\principal_id.sql" />
+    <None Include="func\db_id.sql" />
+    <None Include="func\db_principal_id.sql" />
+    <None Include="func\file_index.sql" />
+    <None Include="func\partS\file\Script1_1.sql" />
+    <None Include="func\partS\obj\Script1_1.sql" />
+    <None Include="@db\func\prop.sql" />
+    <None Include="@srv\prop\prop.sql" />
+    <None Include="val.typ\prop.sql" />
+    <None Include="objc\%40%40options.sql" />
+    <None Include="@db\statistics\script.sql" />
+    <None Include="exe\Script1_1.sql" />
+    <None Include="xact\Script1_1.sql" />
+    <None Include="%40val\Copy of Script1_1.sql" />
+    <None Include="%40val\eq\Copy of Script1_1.sql" />
+    <None Include="cfg\Copy of Script1_1.sql" />
+    <None Include="tables\cols\Copy of Script1_1.sql" />
+    <None Include="tables\cols\Copy of Copy of Script1_1.sql" />
+    <None Include="snippets\Copy of getLatestExecuted.sql" />
+    <None Include="@srv\deadlock detect.sql" />
+    <None Include="@srv\sysalerts.sql" />
+    <None Include="@srv\subscript.sql" />
+    <None Include="@srv\notify\notifiy.sql" />
+    <None Include="%40srv\notify\Copy of notifiy.sql" />
+    <None Include="@db\service broker.sql" />
+    <None Include="%40db\svcBroker\service broker.sql" />
+    <None Include="@db\svcBroker\setNoRollback.sql" />
+    <None Include="@db\singleUser.sql" />
+    <None Include="table\Copy of attach.sql" />
+    <None Include="@db\dbcc dataNullBit.sql" />
+    <Build Include="@srv\db\createSnapshot.sql" />
+    <None Include="@db\file\sp_helpfile.sql" />
+    <Build Include="@srv\db\setSingleUser.sql" />
+    <None Include="@db\tran\spaceDuration.sql" />
+    <None Include="tran\%40%40options.sql" />
+    <None Include="tran\Copy of %40%40options.sql" />
+    <None Include="tran\Copy %281) of %40%40options.sql" />
+    <None Include="cfg\option.sql" />
+    <None Include="cfg\option\ansi_warning\set on.sql" />
+    <None Include="sel\_exceptUnion\exceptUnion.sql" />
+    <None Include="proc\exceptUnion.sql" />
+    <None Include="@db\tran\trans.sql" />
+    <None Include="db\table\constraints\sel.sql" />
+    <None Include="db\table\constraints\remove\sel.sql" />
+    <None Include="view\Script1.sql" />
+    <None Include="table\rows\col\concat_\Pivot.sql" />
+    <None Include="conn\session\_batch\_sentence_\_query_\grpBy_\cols_\rollup.sql" />
+    <Build Include="index_\Index1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db_files.sql" />
+    <None Include="fn_helpcollations.sql" />
+    <None Include="listInstances.sql" />
+    <None Include="_user_\Script1_1.sql" />
+    <None Include="%40srv\sys\Script1_1.sql" />
+    <None Include="func\Script1_1.sql" />
+    <None Include="func\partS\index\Script1_1.sql" />
+    <None Include="table\col\Script1_1.sql" />
+    <None Include="vw\Script1_1.sql" />
+    <None Include="%40val\Script1_1.sql" />
+    <None Include="——temp\Script1_1.sql" />
+    <None Include="percentQuote\Script1_1.sql" />
+    <None Include="DMV_DMF.sql" />
+    <None Include="sel\exceptUnion.sql" />
+    <None Include="db\table\indexes\usage.sql" />
+    <None Include="db\modules\Script1_1.sql" />
+    <None Include="batch\xact_abort.sql" />
+    <None Include="db\options\implicit_tran\sel.sql" />
+    <None Include="db\table\col_\ident\reseed.sql" />
+    <None Include="db\login\Script1.sql" />
+    <None Include="val\dataLength\Script1.sql" />
+    <None Include="val\Script1.sql" />
+    <None Include="vow\Script1.sql" />
+    <None Include="col\Caption.sql" />
+    <None Include="svr\master\sptValues\Script1.sql" />
+    <None Include="_tsql_\values_\Script1_1.sql" />
+    <None Include="index\VarInIndexedQuery.sql" />
+    <None Include="table\rows\col\Concat.sql" />
+    <None Include="sheet\unpivot\Script1_1.sql" />
+    <None Include="db\tables\sel.sql" />
+    <None Include="db\schema\of.sql" />
+    <None Include="db\table\cols\sel.sql" />
+    <None Include="conn\session\_batch\_sentence_\func_\time_\eom.sql" />
+    <None Include="conn\session\_batch\_sentence_\_query_\clause_\_sel_\window.sql" />
+    <None Include="conn\session\_batch\_sentence_\_query_\clause_\_sel_\Rank.sql" />
+    <None Include="conn\session\_batch\_sentence_\_query_\clause_\_sel_\window_\Offset.sql" />
+    <None Include="conn\session\_batch\_sentence_\query_\pivot.sql" />
+    <None Include="conn\session\_batch\_sentence_\query_\unpivot.sql" />
+    <None Include="conn\session\_batch\_sentence_\_query_\grpBy_\cols.sql" />
+    <None Include="conn\session\_batch\_sentence_\_query_\grpBy_\cols_\cubic.sql" />
+    <None Include="conn\session\_batch\_sentence_\query_\_grp_\sel.sql" />
+    <None Include="conn\session\_batch\_sentence_\query_\sideEffect_\ins.sql" />
+    <None Include="db\isRecurTrig\Script1.sql" />
+    <None Include="table\acc\Script1_1.sql" />
+    <None Include="db\updatable\Script1_1.sql" />
+    <None Include="acc\tables.sql" />
+    <None Include="acc\tables\Script1_1.sql" />
+    <None Include="dynamic\sp_executesql.sql" />
+    <None Include="table\Script1_1.sql" />
+    <None Include="ReadMe.md" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+﻿SELECT empid, A, B, C, D FROM (SELECT empid, custid, qty       FROM dbo.Orders) AS D   PIVOT(SUM(qty) FOR custid IN(A, B, C, D)) AS P;

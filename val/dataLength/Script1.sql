@@ -1,0 +1,9 @@
+﻿DECLARE @n NVARCHAR(10)
+DECLARE @v VARCHAR(10)
+
+SELECT @n = 'A', @v='A'
+
+SELECT  DATALENGTH(@n),DATALENGTH(@v)
+
+---------
+--2 1

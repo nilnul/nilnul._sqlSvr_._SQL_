@@ -1,0 +1,1 @@
+﻿select Try_convert(xml, '1')

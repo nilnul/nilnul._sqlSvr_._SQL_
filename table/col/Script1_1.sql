@@ -1,0 +1,1 @@
+﻿SELECT COL_LENGTH('dbo.Products', 'ProductName'); 

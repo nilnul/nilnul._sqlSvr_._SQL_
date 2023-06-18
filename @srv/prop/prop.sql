@@ -1,0 +1,4 @@
+﻿SELECT SERVERPROPERTY('ComputerNamePhysicalNetBIOS');
+
+
+SELECT SERVERPROPERTY('Edition');

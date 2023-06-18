@@ -1,0 +1,4 @@
+﻿
+SELECT @@VERSION
+;
+ select @@servername

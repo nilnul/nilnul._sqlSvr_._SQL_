@@ -1,0 +1,3 @@
+﻿select top 1000
+	*
+	from [INFORMATION_SCHEMA].[TABLE_PRIVILEGES]

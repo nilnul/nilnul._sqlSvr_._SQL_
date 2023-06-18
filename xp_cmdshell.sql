@@ -1,0 +1,1 @@
+﻿EXEC xp_cmdshell 'MD C:\MyNewFolder'

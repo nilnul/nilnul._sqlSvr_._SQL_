@@ -1,0 +1,1 @@
+﻿dbcc opentran(wyt)

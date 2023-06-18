@@ -1,0 +1,1 @@
+﻿SELECT TYPEPROPERTY('bigint', 'Precision');

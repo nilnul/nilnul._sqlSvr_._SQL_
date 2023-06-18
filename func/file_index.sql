@@ -1,0 +1,1 @@
+﻿SELECT FILE_IDEX('AdventureWorks2014_Log');

@@ -1,0 +1,1 @@
+﻿SELECT name, is_broker_enabled ,*FROM sys.databases 
